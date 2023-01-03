@@ -15,6 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn -f hello-app/pom.xml test'
+                echo 'awesome_jenkins_maven_project'
             }
             post {
                 always {
